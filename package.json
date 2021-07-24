@@ -1,7 +1,7 @@
 {
   "name": "nodejs-scaffold",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Node.js scaffold. Ready to code!",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./src ./test",
@@ -22,8 +22,16 @@
       "git add"
     ]
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "scaffold",
+    "nvm",
+    "prettier",
+    "eslint",
+    "jest",
+    "nvm"
+  ],
+  "author": "Alejandro López Sánchez <a.lopez.sanchez@outlook.es> (https://alopezsanchez.com)",
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
