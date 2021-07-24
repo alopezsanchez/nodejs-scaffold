@@ -32,7 +32,7 @@
     "nvm"
   ],
   "author": "Alejandro López Sánchez <a.lopez.sanchez@outlook.es> (https://alopezsanchez.com)",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.28.0",
