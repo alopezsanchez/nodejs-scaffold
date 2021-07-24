@@ -1,0 +1,41 @@
+{
+  "name": "nodejs-scaffold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src ./test",
+    "start": "node index.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run lint && npm run test:coverage"
+    }
+  },
+  "lint-staged": {
+    "{src,test}/**/*.{js,json}": [
+      "prettier --write",
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-unobtrusive": "^1.2.5",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^2.7.0",
+    "jest": "^27.0.4",
+    "lint-staged": "^8.2.1",
+    "prettier": "^2.3.1"
+  }
+}
